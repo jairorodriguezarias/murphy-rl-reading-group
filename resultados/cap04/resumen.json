@@ -1,0 +1,39 @@
+{
+  "pasos_reales": 1600,
+  "epsilon": 0.2,
+  "alpha": 0.2,
+  "gamma": 0.95,
+  "0": {
+    "rmse_final": {
+      "media": 0.018604802381359024,
+      "ic95_aprox_semianchura": 0.0031741218341718013
+    },
+    "metas_alcanzadas": {
+      "media": 172.3,
+      "ic95_aprox_semianchura": 2.687040398889298
+    },
+    "backups_totales_por_replica": 1600
+  },
+  "5": {
+    "rmse_final": {
+      "media": 9.619390824908336e-16,
+      "ic95_aprox_semianchura": 8.867878071160629e-32
+    },
+    "metas_alcanzadas": {
+      "media": 180.4,
+      "ic95_aprox_semianchura": 1.88318967935284
+    },
+    "backups_totales_por_replica": 9600
+  },
+  "20": {
+    "rmse_final": {
+      "media": 9.619390824908336e-16,
+      "ic95_aprox_semianchura": 8.867878071160629e-32
+    },
+    "metas_alcanzadas": {
+      "media": 180.95,
+      "ic95_aprox_semianchura": 1.8996253924337154
+    },
+    "backups_totales_por_replica": 33600
+  }
+}

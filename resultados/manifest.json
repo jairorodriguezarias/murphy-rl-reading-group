@@ -1,0 +1,170 @@
+{
+  "cap01": {
+    "semilla": 2026,
+    "replicas": 20,
+    "segundos": 0.17170566599816084,
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "source_sha256": {
+      "__init__.py": "003ee3e74feffadf72b33767c42929863d4f1502f6066447dbda25c0caa8d607",
+      "cap01.py": "36bdc3155fd541c39de8acb28aa707df539bf8cb38810e15d603fc40e9ea79f9",
+      "cap02.py": "66d8468407eaed82b29c6589c5f4c2d57d59c3acc179e9b2970c6641104ef0d4",
+      "cap03.py": "d160a893eb7ce40da197c3d176216d619caeec9de830aec6b82458fc4b9d3adc",
+      "cap04.py": "6339ce92a252dfbe49f86e249211f35780dcef187f4dee7d30646ed0c2f28ae3",
+      "cap05.py": "2dd42f1e6100c6e39abb75d31f2447f7f35b3618f7c0879b226f96cfc9575f48",
+      "cap06.py": "9574ff5be34e67f1b82fd958805dd6b65f945222d74f18f40ef7eb9cd51e8bb2",
+      "cap07.py": "4a7def69b4496ed22c6bb639bc2d2c55fe6b320362491c4c754211676a8bf20f",
+      "cap08.py": "eb6f5efbc4f3d95f460d472a1853a9dd263f06a26d5347f53f111461e2d55207",
+      "comun.py": "c49422fb29952e2c9869c38a79914c2165ef0cbd481cb3c97c7a582b7b93f0e3",
+      "ejecutar.py": "9a3d3cea641cbc2e5077f908e4dfb5a9a71501cb3541713d77f56947a155f73c"
+    }
+  },
+  "cap02": {
+    "semilla": 2026,
+    "replicas": 20,
+    "segundos": 5.069368587108329,
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "source_sha256": {
+      "__init__.py": "003ee3e74feffadf72b33767c42929863d4f1502f6066447dbda25c0caa8d607",
+      "cap01.py": "36bdc3155fd541c39de8acb28aa707df539bf8cb38810e15d603fc40e9ea79f9",
+      "cap02.py": "66d8468407eaed82b29c6589c5f4c2d57d59c3acc179e9b2970c6641104ef0d4",
+      "cap03.py": "d160a893eb7ce40da197c3d176216d619caeec9de830aec6b82458fc4b9d3adc",
+      "cap04.py": "6339ce92a252dfbe49f86e249211f35780dcef187f4dee7d30646ed0c2f28ae3",
+      "cap05.py": "2dd42f1e6100c6e39abb75d31f2447f7f35b3618f7c0879b226f96cfc9575f48",
+      "cap06.py": "9574ff5be34e67f1b82fd958805dd6b65f945222d74f18f40ef7eb9cd51e8bb2",
+      "cap07.py": "4a7def69b4496ed22c6bb639bc2d2c55fe6b320362491c4c754211676a8bf20f",
+      "cap08.py": "eb6f5efbc4f3d95f460d472a1853a9dd263f06a26d5347f53f111461e2d55207",
+      "comun.py": "c49422fb29952e2c9869c38a79914c2165ef0cbd481cb3c97c7a582b7b93f0e3",
+      "ejecutar.py": "9a3d3cea641cbc2e5077f908e4dfb5a9a71501cb3541713d77f56947a155f73c"
+    }
+  },
+  "cap03": {
+    "semilla": 2026,
+    "replicas": 20,
+    "segundos": 0.8179245290812105,
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "source_sha256": {
+      "__init__.py": "003ee3e74feffadf72b33767c42929863d4f1502f6066447dbda25c0caa8d607",
+      "cap01.py": "36bdc3155fd541c39de8acb28aa707df539bf8cb38810e15d603fc40e9ea79f9",
+      "cap02.py": "66d8468407eaed82b29c6589c5f4c2d57d59c3acc179e9b2970c6641104ef0d4",
+      "cap03.py": "d160a893eb7ce40da197c3d176216d619caeec9de830aec6b82458fc4b9d3adc",
+      "cap04.py": "6339ce92a252dfbe49f86e249211f35780dcef187f4dee7d30646ed0c2f28ae3",
+      "cap05.py": "2dd42f1e6100c6e39abb75d31f2447f7f35b3618f7c0879b226f96cfc9575f48",
+      "cap06.py": "9574ff5be34e67f1b82fd958805dd6b65f945222d74f18f40ef7eb9cd51e8bb2",
+      "cap07.py": "4a7def69b4496ed22c6bb639bc2d2c55fe6b320362491c4c754211676a8bf20f",
+      "cap08.py": "eb6f5efbc4f3d95f460d472a1853a9dd263f06a26d5347f53f111461e2d55207",
+      "comun.py": "c49422fb29952e2c9869c38a79914c2165ef0cbd481cb3c97c7a582b7b93f0e3",
+      "ejecutar.py": "9a3d3cea641cbc2e5077f908e4dfb5a9a71501cb3541713d77f56947a155f73c"
+    }
+  },
+  "cap04": {
+    "semilla": 2026,
+    "replicas": 20,
+    "segundos": 2.6431774438824505,
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "source_sha256": {
+      "__init__.py": "003ee3e74feffadf72b33767c42929863d4f1502f6066447dbda25c0caa8d607",
+      "cap01.py": "36bdc3155fd541c39de8acb28aa707df539bf8cb38810e15d603fc40e9ea79f9",
+      "cap02.py": "66d8468407eaed82b29c6589c5f4c2d57d59c3acc179e9b2970c6641104ef0d4",
+      "cap03.py": "d160a893eb7ce40da197c3d176216d619caeec9de830aec6b82458fc4b9d3adc",
+      "cap04.py": "6339ce92a252dfbe49f86e249211f35780dcef187f4dee7d30646ed0c2f28ae3",
+      "cap05.py": "2dd42f1e6100c6e39abb75d31f2447f7f35b3618f7c0879b226f96cfc9575f48",
+      "cap06.py": "9574ff5be34e67f1b82fd958805dd6b65f945222d74f18f40ef7eb9cd51e8bb2",
+      "cap07.py": "4a7def69b4496ed22c6bb639bc2d2c55fe6b320362491c4c754211676a8bf20f",
+      "cap08.py": "eb6f5efbc4f3d95f460d472a1853a9dd263f06a26d5347f53f111461e2d55207",
+      "comun.py": "c49422fb29952e2c9869c38a79914c2165ef0cbd481cb3c97c7a582b7b93f0e3",
+      "ejecutar.py": "9a3d3cea641cbc2e5077f908e4dfb5a9a71501cb3541713d77f56947a155f73c"
+    }
+  },
+  "cap05": {
+    "semilla": 2026,
+    "replicas": 20,
+    "segundos": 1.4416086678393185,
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "source_sha256": {
+      "__init__.py": "003ee3e74feffadf72b33767c42929863d4f1502f6066447dbda25c0caa8d607",
+      "cap01.py": "36bdc3155fd541c39de8acb28aa707df539bf8cb38810e15d603fc40e9ea79f9",
+      "cap02.py": "66d8468407eaed82b29c6589c5f4c2d57d59c3acc179e9b2970c6641104ef0d4",
+      "cap03.py": "d160a893eb7ce40da197c3d176216d619caeec9de830aec6b82458fc4b9d3adc",
+      "cap04.py": "6339ce92a252dfbe49f86e249211f35780dcef187f4dee7d30646ed0c2f28ae3",
+      "cap05.py": "2dd42f1e6100c6e39abb75d31f2447f7f35b3618f7c0879b226f96cfc9575f48",
+      "cap06.py": "9574ff5be34e67f1b82fd958805dd6b65f945222d74f18f40ef7eb9cd51e8bb2",
+      "cap07.py": "4a7def69b4496ed22c6bb639bc2d2c55fe6b320362491c4c754211676a8bf20f",
+      "cap08.py": "eb6f5efbc4f3d95f460d472a1853a9dd263f06a26d5347f53f111461e2d55207",
+      "comun.py": "c49422fb29952e2c9869c38a79914c2165ef0cbd481cb3c97c7a582b7b93f0e3",
+      "ejecutar.py": "9a3d3cea641cbc2e5077f908e4dfb5a9a71501cb3541713d77f56947a155f73c"
+    }
+  },
+  "cap06": {
+    "semilla": 2026,
+    "replicas": 20,
+    "segundos": 2.1210187261458486,
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "source_sha256": {
+      "__init__.py": "003ee3e74feffadf72b33767c42929863d4f1502f6066447dbda25c0caa8d607",
+      "cap01.py": "36bdc3155fd541c39de8acb28aa707df539bf8cb38810e15d603fc40e9ea79f9",
+      "cap02.py": "66d8468407eaed82b29c6589c5f4c2d57d59c3acc179e9b2970c6641104ef0d4",
+      "cap03.py": "d160a893eb7ce40da197c3d176216d619caeec9de830aec6b82458fc4b9d3adc",
+      "cap04.py": "6339ce92a252dfbe49f86e249211f35780dcef187f4dee7d30646ed0c2f28ae3",
+      "cap05.py": "2dd42f1e6100c6e39abb75d31f2447f7f35b3618f7c0879b226f96cfc9575f48",
+      "cap06.py": "9574ff5be34e67f1b82fd958805dd6b65f945222d74f18f40ef7eb9cd51e8bb2",
+      "cap07.py": "4a7def69b4496ed22c6bb639bc2d2c55fe6b320362491c4c754211676a8bf20f",
+      "cap08.py": "eb6f5efbc4f3d95f460d472a1853a9dd263f06a26d5347f53f111461e2d55207",
+      "comun.py": "c49422fb29952e2c9869c38a79914c2165ef0cbd481cb3c97c7a582b7b93f0e3",
+      "ejecutar.py": "9a3d3cea641cbc2e5077f908e4dfb5a9a71501cb3541713d77f56947a155f73c"
+    }
+  },
+  "cap07": {
+    "semilla": 2026,
+    "replicas": 20,
+    "segundos": 0.836080146022141,
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "source_sha256": {
+      "__init__.py": "003ee3e74feffadf72b33767c42929863d4f1502f6066447dbda25c0caa8d607",
+      "cap01.py": "36bdc3155fd541c39de8acb28aa707df539bf8cb38810e15d603fc40e9ea79f9",
+      "cap02.py": "66d8468407eaed82b29c6589c5f4c2d57d59c3acc179e9b2970c6641104ef0d4",
+      "cap03.py": "d160a893eb7ce40da197c3d176216d619caeec9de830aec6b82458fc4b9d3adc",
+      "cap04.py": "6339ce92a252dfbe49f86e249211f35780dcef187f4dee7d30646ed0c2f28ae3",
+      "cap05.py": "2dd42f1e6100c6e39abb75d31f2447f7f35b3618f7c0879b226f96cfc9575f48",
+      "cap06.py": "9574ff5be34e67f1b82fd958805dd6b65f945222d74f18f40ef7eb9cd51e8bb2",
+      "cap07.py": "4a7def69b4496ed22c6bb639bc2d2c55fe6b320362491c4c754211676a8bf20f",
+      "cap08.py": "eb6f5efbc4f3d95f460d472a1853a9dd263f06a26d5347f53f111461e2d55207",
+      "comun.py": "c49422fb29952e2c9869c38a79914c2165ef0cbd481cb3c97c7a582b7b93f0e3",
+      "ejecutar.py": "9a3d3cea641cbc2e5077f908e4dfb5a9a71501cb3541713d77f56947a155f73c"
+    }
+  },
+  "cap08": {
+    "semilla": 2026,
+    "replicas": 20,
+    "segundos": 0.17969279712997377,
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "source_sha256": {
+      "__init__.py": "003ee3e74feffadf72b33767c42929863d4f1502f6066447dbda25c0caa8d607",
+      "cap01.py": "36bdc3155fd541c39de8acb28aa707df539bf8cb38810e15d603fc40e9ea79f9",
+      "cap02.py": "66d8468407eaed82b29c6589c5f4c2d57d59c3acc179e9b2970c6641104ef0d4",
+      "cap03.py": "d160a893eb7ce40da197c3d176216d619caeec9de830aec6b82458fc4b9d3adc",
+      "cap04.py": "6339ce92a252dfbe49f86e249211f35780dcef187f4dee7d30646ed0c2f28ae3",
+      "cap05.py": "2dd42f1e6100c6e39abb75d31f2447f7f35b3618f7c0879b226f96cfc9575f48",
+      "cap06.py": "9574ff5be34e67f1b82fd958805dd6b65f945222d74f18f40ef7eb9cd51e8bb2",
+      "cap07.py": "4a7def69b4496ed22c6bb639bc2d2c55fe6b320362491c4c754211676a8bf20f",
+      "cap08.py": "eb6f5efbc4f3d95f460d472a1853a9dd263f06a26d5347f53f111461e2d55207",
+      "comun.py": "c49422fb29952e2c9869c38a79914c2165ef0cbd481cb3c97c7a582b7b93f0e3",
+      "ejecutar.py": "9a3d3cea641cbc2e5077f908e4dfb5a9a71501cb3541713d77f56947a155f73c"
+    }
+  }
+}

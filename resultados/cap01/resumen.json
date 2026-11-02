@@ -1,0 +1,12 @@
+{
+  "umbral_gamma": 0.7598356856515925,
+  "episodios_por_replica": 1000,
+  "sin_memoria": {
+    "media": 0.4955000000000001,
+    "ic95_aprox_semianchura": 0.009403593266182321
+  },
+  "con_memoria": {
+    "media": 1.0,
+    "ic95_aprox_semianchura": 0.0
+  }
+}

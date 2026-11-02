@@ -1,0 +1,42 @@
+{
+  "pasos": 4000,
+  "cambio_en": 2000,
+  "epsilon": 0.1,
+  "factor_olvido": 0.98,
+  "Estacionario": {
+    "ε-greedy": {
+      "media": 135.39000000000007,
+      "ic95_aprox_semianchura": 12.112552118056264
+    },
+    "UCB1": {
+      "media": 98.51000000000053,
+      "ic95_aprox_semianchura": 5.450178356521503
+    },
+    "Thompson": {
+      "media": 19.95999999999999,
+      "ic95_aprox_semianchura": 4.241615803341687
+    },
+    "Thompson con olvido": {
+      "media": 298.5499999999971,
+      "ic95_aprox_semianchura": 8.511236825205367
+    }
+  },
+  "Cambiante": {
+    "ε-greedy": {
+      "media": 1123.0300000000138,
+      "ic95_aprox_semianchura": 46.10164620702194
+    },
+    "UCB1": {
+      "media": 125.34,
+      "ic95_aprox_semianchura": 11.81995726201186
+    },
+    "Thompson": {
+      "media": 491.04000000000724,
+      "ic95_aprox_semianchura": 66.81773825527081
+    },
+    "Thompson con olvido": {
+      "media": 305.73999999999705,
+      "ic95_aprox_semianchura": 7.833968100656395
+    }
+  }
+}

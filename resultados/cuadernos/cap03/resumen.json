@@ -1,0 +1,32 @@
+{
+  "batch": 32,
+  "iteraciones": 500,
+  "learning_rate": 0.1,
+  "final": {
+    "Sin baseline": {
+      "media": 0.9679913650826064,
+      "ic95_aprox_semianchura": 0.0018422861936547802
+    },
+    "Baseline aprendido": {
+      "media": 0.9672748888416635,
+      "ic95_aprox_semianchura": 0.0006263486087180437
+    }
+  },
+  "varianza_sin_baseline": 17.06691789600838,
+  "varianza_con_baseline": 0.39157332619612534,
+  "gradiente_exacto_contexto_0": [
+    0.3333333333333333,
+    0.0,
+    -0.3333333333333333
+  ],
+  "gradiente_estimado_sin_baseline": [
+    0.35297557808325863,
+    -0.01918650568097333,
+    -0.3337890724022832
+  ],
+  "gradiente_estimado_con_baseline": [
+    0.33764224474992394,
+    -0.0022198390143067983,
+    -0.3354224057356183
+  ]
+}

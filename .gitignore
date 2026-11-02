@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Configuracion local y credenciales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+.pytest_cache/
+.ruff_cache/

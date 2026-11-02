@@ -1,0 +1,21 @@
+{
+  "iteraciones": 4000,
+  "nashconv_actual_final": {
+    "media": 1.6698913880911264,
+    "ic95_aprox_semianchura": 0.10490133040579429
+  },
+  "nashconv_media_final": {
+    "media": 0.031038816525221204,
+    "ic95_aprox_semianchura": 0.0005934255867106881
+  },
+  "politica_media_jugador_1": [
+    0.3335100520612576,
+    0.3359297147006584,
+    0.330560233238084
+  ],
+  "politica_media_jugador_2": [
+    0.3330859945750536,
+    0.3304716765123353,
+    0.3364423289126113
+  ]
+}

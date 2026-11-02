@@ -1,0 +1,9 @@
+{
+  "estudios": 2000,
+  "semillas_por_algoritmo": 20,
+  "diferencia_real": 0,
+  "diferencia_media_observada": 0.0013568595423956791,
+  "ventaja_seleccionando_mejor_semilla": 1.8639884499439732,
+  "ventaja_evaluacion_independiente": -0.04443461745920536,
+  "nota": "Simulación estadística añadida por esta guía; vinculada a §1.3.7."
+}

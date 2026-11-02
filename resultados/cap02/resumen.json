@@ -1,0 +1,15 @@
+{
+  "gamma": 0.95,
+  "slip": 0.15,
+  "epsilon": 0.25,
+  "pasos": 16000,
+  "valor_optimo_inicio": 0.8166195128234138,
+  "rmse_final": {
+    "media": 0.015769913738370202,
+    "ic95_aprox_semianchura": 0.0032108400796087267
+  },
+  "valor_final": {
+    "media": 0.8166195128236943,
+    "ic95_aprox_semianchura": 4.9921715471057503e-17
+  }
+}
