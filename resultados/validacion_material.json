@@ -1,8 +1,78 @@
 {
-  "enlaces_locales_markdown": 32,
+  "enlaces_locales_markdown": 77,
   "formulas_mathml": 118,
   "figuras_html_incrustadas": 8,
   "cuadernos_ejecutados": 8,
-  "datos_cuadernos_iguales_a_referencia": true,
-  "hashes_codigo_y_pdf": "correctos"
+  "celdas_codigo_ejecutadas": 76,
+  "figuras_cuadernos": 25,
+  "palabras_markdown_cuadernos": 10427,
+  "fuentes_y_celdas_coinciden": true,
+  "datos_archivados_iguales_a_referencia": true,
+  "hashes_codigo_y_pdf": "correctos",
+  "detalle_cuadernos": [
+    {
+      "cuaderno": "01_introduccion.ipynb",
+      "celdas": 17,
+      "celdas_codigo": 7,
+      "palabras_markdown": 1399,
+      "figuras": 3,
+      "ejecutado_en_carpeta_vacia": true
+    },
+    {
+      "cuaderno": "02_valores.ipynb",
+      "celdas": 21,
+      "celdas_codigo": 10,
+      "palabras_markdown": 1293,
+      "figuras": 3,
+      "ejecutado_en_carpeta_vacia": true
+    },
+    {
+      "cuaderno": "03_politicas.ipynb",
+      "celdas": 19,
+      "celdas_codigo": 9,
+      "palabras_markdown": 1295,
+      "figuras": 4,
+      "ejecutado_en_carpeta_vacia": true
+    },
+    {
+      "cuaderno": "04_modelos.ipynb",
+      "celdas": 20,
+      "celdas_codigo": 9,
+      "palabras_markdown": 1217,
+      "figuras": 3,
+      "ejecutado_en_carpeta_vacia": true
+    },
+    {
+      "cuaderno": "05_multiagente.ipynb",
+      "celdas": 21,
+      "celdas_codigo": 10,
+      "palabras_markdown": 1166,
+      "figuras": 2,
+      "ejecutado_en_carpeta_vacia": true
+    },
+    {
+      "cuaderno": "06_llms.ipynb",
+      "celdas": 21,
+      "celdas_codigo": 10,
+      "palabras_markdown": 1376,
+      "figuras": 2,
+      "ejecutado_en_carpeta_vacia": true
+    },
+    {
+      "cuaderno": "07_otros_temas.ipynb",
+      "celdas": 25,
+      "celdas_codigo": 12,
+      "palabras_markdown": 1502,
+      "figuras": 5,
+      "ejecutado_en_carpeta_vacia": true
+    },
+    {
+      "cuaderno": "08_agradecimientos.ipynb",
+      "celdas": 19,
+      "celdas_codigo": 9,
+      "palabras_markdown": 1179,
+      "figuras": 3,
+      "ejecutado_en_carpeta_vacia": true
+    }
+  ]
 }

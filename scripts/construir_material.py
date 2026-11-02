@@ -8,6 +8,7 @@ import re
 import sys
 import markdown
 from latex2mathml.converter import convert
+from construir_cuadernos import build_notebooks
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = sorted((ROOT/"docs").glob("*.md"))
@@ -54,62 +55,6 @@ def build_report():
         "Dyna compara presupuestos iguales de interacción, con cómputo diferente. El laboratorio de LLM es categórico. Las curvas no establecen resultados generales ni reproducen benchmarks de redes profundas.", "",
         "Consulta los JSON y arrays por capítulo para más métricas y precisión. No se ha elegido solo la mejor semilla."]
     (ROOT/"resultados/INFORME.md").write_text("\n".join(lines)+"\n", encoding="utf-8")
-
-def cell(kind, source, index):
-    d = {"cell_type": kind, "id": f"celda-{index:02d}", "metadata": {},
-         "source": source}
-    if kind == "code":
-        d.update(execution_count=None, outputs=[])
-    return d
-
-def build_notebooks():
-    folder = ROOT/"cuadernos"
-    folder.mkdir(exist_ok=True)
-    for chapter in range(1, 9):
-        doc = next(p for p in DOCS if p.name.startswith(f"{chapter:02d}_"))
-        content = doc.read_text()
-        # Las imágenes se muestran a continuación a partir de la nueva ejecución.
-        content = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", content)
-        cells = [cell("markdown", content, 0)]
-        cells += [cell("markdown", "## Preparar la ejecución\n\nEjecuta todas las celdas en orden. El módulo contiene la implementación completa; la siguiente celda muestra su código. Cambia SEMILLA y REPLICAS para repetir. Los resultados del cuaderno se guardan en una carpeta separada.", 1)]
-        cells += [cell("code", f'''from pathlib import Path
-import sys
-import json
-import inspect
-import subprocess
-import importlib
-from IPython.display import display, Image, Code
-
-candidates = [Path.cwd(), *Path.cwd().parents]
-ROOT = next(p for p in candidates if (p / "experimentos" / "ejecutar.py").exists())
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-CAPITULO = {chapter}
-SEMILLA = 2026
-REPLICAS = 20
-SALIDA = ROOT / "resultados" / "cuadernos"
-modulo = importlib.import_module(f"experimentos.cap{{CAPITULO:02d}}")
-display(Code(inspect.getsource(modulo), language="python"))''', 2)]
-        cells += [cell("markdown", "## Ejecutar y registrar\n\nEl comando utiliza el mismo Python del kernel y conserva parámetros y hashes en su manifiesto. No necesita servicios externos.", 3)]
-        cells += [cell("code", '''command = [sys.executable, "-m", "experimentos.ejecutar",
-           "--capitulo", str(CAPITULO), "--semilla", str(SEMILLA),
-           "--replicas", str(REPLICAS), "--salida", str(SALIDA)]
-completed = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, check=True)
-print(completed.stdout)
-carpeta = SALIDA / f"cap{CAPITULO:02d}"''', 4)]
-        cells += [cell("code", '''display(Image(filename=str(carpeta / "figura.png")))
-resumen = json.loads((carpeta / "resumen.json").read_text())
-print(json.dumps(resumen, indent=2, ensure_ascii=False))''', 5)]
-        cells += [cell("markdown", "## Inspeccionar los datos\n\nLas claves describen métricas; las dimensiones suelen ser réplica × instante, excepto los arrays auxiliares. Escribe una conclusión que apoyen los datos y una limitación. Prueba la modificación propuesta en el texto; antes de ejecutarla, predice su efecto.", 6)]
-        cells += [cell("code", '''import numpy as np
-with np.load(carpeta / "datos.npz") as datos:
-    for nombre in datos.files:
-        print(nombre, datos[nombre].shape)''', 7)]
-        cells += [cell("markdown", "## Tu variante\n\nAnota aquí: hipótesis, parámetro cambiado, métrica, resultado y limitación. Para modificar la dinámica o el algoritmo, edita el módulo mostrado o copia su función a una celda y experimenta con ella.\n\nFuente: [Kevin P. Murphy, Reinforcement Learning: An Overview, v5](https://arxiv.org/abs/2412.05265v5), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Resumen adaptado y experimento propio de esta guía.", 8)]
-        nb = {"cells": cells, "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
-              "language_info": {"name": "python", "version": "3.11"}},
-              "nbformat": 4, "nbformat_minor": 5}
-        (folder/(doc.stem+".ipynb")).write_text(json.dumps(nb, ensure_ascii=False, indent=1)+"\n")
 
 def render_doc(path):
     text = path.read_text()
