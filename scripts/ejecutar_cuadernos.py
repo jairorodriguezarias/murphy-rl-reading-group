@@ -33,5 +33,5 @@ def main(chapter=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--capitulo", type=int, choices=range(9), help="Ejecutar solo un cuaderno (0 = preparación).")
+    parser.add_argument("--capitulo", type=int, choices=range(10), help="Ejecutar solo un cuaderno (0 = preparación; 9 = taller de diagnóstico).")
     main(parser.parse_args().capitulo)

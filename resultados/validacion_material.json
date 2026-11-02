@@ -1,11 +1,11 @@
 {
-  "enlaces_locales_markdown": 90,
+  "enlaces_locales_markdown": 121,
   "formulas_mathml": 118,
   "figuras_html_incrustadas": 8,
-  "cuadernos_ejecutados": 9,
-  "celdas_codigo_ejecutadas": 98,
-  "figuras_cuadernos": 29,
-  "palabras_markdown_cuadernos": 12877,
+  "cuadernos_ejecutados": 10,
+  "celdas_codigo_ejecutadas": 119,
+  "figuras_cuadernos": 32,
+  "palabras_markdown_cuadernos": 15016,
   "fuentes_y_celdas_coinciden": true,
   "datos_archivados_iguales_a_referencia": true,
   "hashes_codigo_y_pdf": "correctos",
@@ -79,6 +79,14 @@
       "celdas": 19,
       "celdas_codigo": 9,
       "palabras_markdown": 1179,
+      "figuras": 3,
+      "ejecutado_en_carpeta_vacia": true
+    },
+    {
+      "cuaderno": "09_detectives_rl.ipynb",
+      "celdas": 34,
+      "celdas_codigo": 21,
+      "palabras_markdown": 2139,
       "figuras": 3,
       "ejecutado_en_carpeta_vacia": true
     }

@@ -19,8 +19,11 @@ La v5 tiene 253 páginas: siete capítulos de contenido, el capítulo 8 de agrad
 | 6. LLMs and RL | 147–172 | [LLM](docs/06_llms.md) | [RLOO, KL, DPO y selección de respuestas](cuadernos/06_llms.ipynb) |
 | 7. Other topics in RL | 173–198 | [Otros temas](docs/07_otros_temas.md) | [Exploración, riesgo, jerarquías y offline RL](cuadernos/07_otros_temas.ipynb) |
 | 8. Acknowledgements | 199 | [Agradecimientos](docs/08_agradecimientos.md) | [Selección, intervalos y reproducibilidad](cuadernos/08_agradecimientos.ipynb) |
+| 09. Taller añadido | — | Diagnosticar, corregir y comprobar | [Detectives de RL: ocho programas con fallos](cuadernos/09_detectives_rl.ipynb) |
 
 Complementos: [plan de sesiones y glosario](docs/09_plan_y_glosario.md), [resultados observados](resultados/INFORME.md), [protocolo experimental](docs/10_reproducibilidad.md), [procedencia y atribución](fuentes/README.md).
+
+**Para ponerte a prueba:** abre [09 · Detectives de RL](cuadernos/09_detectives_rl.ipynb). Incluye ocho funciones con errores intencionados, 34 comprobaciones, pistas y soluciones desplegables. El punto de partida muestra 0/8 retos resueltos: debes editar las funciones y volver a comprobarlas.
 
 ## Ejecutar los experimentos
 
@@ -56,7 +59,7 @@ uv sync --frozen --extra notebooks
 uv run --extra notebooks jupyter lab cuadernos
 ~~~
 
-Los nueve notebooks incluyen el preparatorio 00 y ocho lecturas de capítulos, con más de 12.000 palabras de explicación, 98 celdas de código y 29 figuras. El preparatorio añade doce preguntas con corrección y una ruta de repaso; las respuestas pendientes se conservan como pendientes. Alternan conceptos, derivaciones, cálculos, experimentos y ejercicios con soluciones orientativas. El código está implementado en sus celdas y cada notebook funciona por separado con NumPy y Matplotlib; todos se han ejecutado en carpetas vacías. Ya contienen sus salidas. Selecciona el kernel del entorno del proyecto si tu editor usa otro Python.
+Los diez notebooks incluyen el preparatorio 00, ocho lecturas de capítulos y un taller de diagnóstico, con más de 15.000 palabras de explicación, 119 celdas de código y 32 figuras. El preparatorio añade doce preguntas con corrección y una ruta de repaso; las respuestas pendientes se conservan como pendientes. Alternan conceptos, derivaciones, cálculos, experimentos y ejercicios con soluciones orientativas. El código está implementado en sus celdas y cada notebook funciona por separado con NumPy y Matplotlib; todos se han ejecutado en carpetas vacías. Ya contienen sus salidas. Selecciona el kernel del entorno del proyecto si tu editor usa otro Python.
 
 Consulta [el índice y la forma de trabajar](cuadernos/README.md). Los notebooks tienen ejemplos y presupuestos propios; las ejecuciones originales de los módulos siguen disponibles en resultados/capXX/. El directorio resultados/cuadernos/ conserva los datos de la primera versión, como indica [su nota de archivo](resultados/cuadernos/README.md).
 

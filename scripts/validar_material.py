@@ -63,7 +63,7 @@ def main():
             assert (ROOT/target).exists(), target
 
     notebooks = sorted((ROOT/"cuadernos").glob("*.ipynb"))
-    assert [int(p.stem.split("_", 1)[0]) for p in notebooks] == list(range(9))
+    assert [int(p.stem.split("_", 1)[0]) for p in notebooks] == list(range(10))
     lessons = []
     for path in notebooks:
         i = int(path.stem.split("_", 1)[0])
@@ -90,8 +90,8 @@ def main():
             "figuras": images, "ejecutado_en_carpeta_vacia": True,
         })
 
-        # El preparatorio 00 no corresponde a un experimento de referencia.
-        if i == 0:
+        # Preparación y talleres no corresponden a experimentos de referencia.
+        if not 1 <= i <= 8:
             continue
         # El archivo histórico es independiente de las nuevas lecciones.
         for filename in ["datos.npz", "metricas.csv", "resumen.json", "figura.png", "figura.svg"]:

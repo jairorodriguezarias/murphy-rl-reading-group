@@ -32,8 +32,8 @@ def parse_lesson(text):
 def build_notebooks(chapter=None):
     DEST.mkdir(exist_ok=True)
     paths = sorted(SOURCE.glob("[0-9][0-9]_*.md"))
-    if [int(p.stem.split("_", 1)[0]) for p in paths] != list(range(9)):
-        raise ValueError("Se esperan preparación 00 y capítulos 01–08.")
+    if [int(p.stem.split("_", 1)[0]) for p in paths] != list(range(10)):
+        raise ValueError("Se esperan preparación 00, capítulos 01–08 y taller 09.")
     if chapter is not None:
         paths = [p for p in paths if int(p.stem.split("_", 1)[0]) == chapter]
         if not paths:
@@ -44,7 +44,7 @@ def build_notebooks(chapter=None):
         nb = {"cells": cells, "metadata": {
             "kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
             "language_info": {"name": "python", "version": ".".join(map(str, sys.version_info[:3]))},
-            "murphy": {"formato": "capitulo_intercalado", "autocontenido": True,
+            "murphy": {"formato": "taller_diagnostico" if path.stem.startswith("09_") else "capitulo_intercalado", "autocontenido": True,
                        "fuente": str(path.relative_to(ROOT)),
                        "sha256_fuente": hashlib.sha256(path.read_bytes()).hexdigest()}},
             "nbformat": 4, "nbformat_minor": 5}
@@ -55,5 +55,5 @@ def build_notebooks(chapter=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--capitulo", type=int, choices=range(9), help="Generar solo un cuaderno (0 = preparación).")
+    parser.add_argument("--capitulo", type=int, choices=range(10), help="Generar solo un cuaderno (0 = preparación; 9 = taller de diagnóstico).")
     build_notebooks(parser.parse_args().capitulo)

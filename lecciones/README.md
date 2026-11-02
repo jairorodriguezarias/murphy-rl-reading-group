@@ -11,6 +11,7 @@ Cada archivo combina explicación en español y bloques de código. El generador
 - [6 · LLM](06_llms.md)
 - [7 · Otros temas](07_otros_temas.md)
 - [8 · Agradecimientos y cierre](08_agradecimientos.md)
+- [09 · Detectives de RL](09_detectives_rl.md)
 
 Para regenerar solo los cuadernos, desde la raíz:
 
@@ -29,7 +30,17 @@ uv run python scripts/construir_cuadernos.py --capitulo 0
 uv run --extra notebooks python scripts/ejecutar_cuadernos.py --capitulo 0
 ~~~
 
-La opción --capitulo de estos dos scripts acepta 0–8. Los módulos de experimentos/ conservan sus capítulos 1–8.
+La opción --capitulo de estos dos scripts acepta 0–9 (9 es el taller de diagnóstico). Los módulos de experimentos/ conservan sus capítulos 1–8.
+
+El taller 09 conserva sus errores intencionados al generarse. Sus soluciones desplegables usan bloques con tres acentos graves, que permanecen como texto; solo los bloques ~~~python se convierten en celdas. Las pruebas de tests/test_retos.py verifican que los ocho fallos iniciales se detectan, que las soluciones pasan y que reparar uno no aprueba los demás.
+
+Para trabajar únicamente con el taller:
+
+~~~bash
+uv run python scripts/construir_cuadernos.py --capitulo 9
+uv run --extra notebooks python scripts/ejecutar_cuadernos.py --capitulo 9
+uv run python -m unittest discover -s tests -v
+~~~
 
 La metadata de cada notebook conserva el SHA-256 de su lección y si se ejecutó en un directorio aislado. [Índice para lectores](../cuadernos/README.md).
 
