@@ -1,5 +1,6 @@
 """Convierte las lecciones Markdown en notebooks con código realmente ejecutable."""
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import re
@@ -28,11 +29,15 @@ def parse_lesson(text):
             cells.append(cell)
     return cells
 
-def build_notebooks():
+def build_notebooks(chapter=None):
     DEST.mkdir(exist_ok=True)
     paths = sorted(SOURCE.glob("[0-9][0-9]_*.md"))
-    if len(paths) != 8:
-        raise ValueError("Se esperan ocho lecciones.")
+    if [int(p.stem.split("_", 1)[0]) for p in paths] != list(range(9)):
+        raise ValueError("Se esperan preparación 00 y capítulos 01–08.")
+    if chapter is not None:
+        paths = [p for p in paths if int(p.stem.split("_", 1)[0]) == chapter]
+        if not paths:
+            raise ValueError(f"No existe la lección {chapter}.")
     for path in paths:
         content = path.read_text(encoding="utf-8")
         cells = parse_lesson(content)
@@ -49,4 +54,6 @@ def build_notebooks():
         print(f"{path.stem}: {len(cells)} celdas, {count} de código")
 
 if __name__ == "__main__":
-    build_notebooks()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--capitulo", type=int, choices=range(9), help="Generar solo un cuaderno (0 = preparación).")
+    build_notebooks(parser.parse_args().capitulo)

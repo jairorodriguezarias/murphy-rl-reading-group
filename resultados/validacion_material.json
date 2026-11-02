@@ -1,15 +1,23 @@
 {
-  "enlaces_locales_markdown": 77,
+  "enlaces_locales_markdown": 90,
   "formulas_mathml": 118,
   "figuras_html_incrustadas": 8,
-  "cuadernos_ejecutados": 8,
-  "celdas_codigo_ejecutadas": 76,
-  "figuras_cuadernos": 25,
-  "palabras_markdown_cuadernos": 10427,
+  "cuadernos_ejecutados": 9,
+  "celdas_codigo_ejecutadas": 98,
+  "figuras_cuadernos": 29,
+  "palabras_markdown_cuadernos": 12877,
   "fuentes_y_celdas_coinciden": true,
   "datos_archivados_iguales_a_referencia": true,
   "hashes_codigo_y_pdf": "correctos",
   "detalle_cuadernos": [
+    {
+      "cuaderno": "00_preparacion.ipynb",
+      "celdas": 45,
+      "celdas_codigo": 22,
+      "palabras_markdown": 2450,
+      "figuras": 4,
+      "ejecutado_en_carpeta_vacia": true
+    },
     {
       "cuaderno": "01_introduccion.ipynb",
       "celdas": 17,

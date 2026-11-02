@@ -1,11 +1,14 @@
 # Leer el libro ejecutando código
 
-Estos ocho notebooks desarrollan los capítulos como lecciones en español: explicación, ecuaciones, ejemplos, código editable, interpretación y ejercicios con soluciones orientativas. Incluyen más de 10.000 palabras de explicación, **76 celdas de código y 25 figuras** ya ejecutadas.
+Estos nueve notebooks incluyen un preparatorio y ocho lecturas de capítulos en español: explicación, ecuaciones, ejemplos, código editable, interpretación y ejercicios con soluciones orientativas. Incluyen más de 12.000 palabras de explicación, **98 celdas de código y 29 figuras** ya ejecutadas.
+
+**Empieza por [00 · Preparación](00_preparacion.ipynb).** Practica NumPy, probabilidad, Bayes, álgebra, cálculo y evaluación; después rellena doce preguntas. El corrector distingue respuestas pendientes e incorrectas e indica qué apartado repasar. Las soluciones razonadas están desplegadas al final solo cuando las abres.
 
 Cada notebook funciona por separado con NumPy y Matplotlib. El código está escrito en sus celdas: no importa módulos del proyecto, no lanza comandos externos y no necesita archivos de datos. Para comprobarlo, los ejecutamos en carpetas temporales vacías.
 
 | Capítulo | Abre el notebook | Qué vas a calcular y modificar |
 |---|---|---|
+| 00 · Preparatorio | [Conocimientos previos](00_preparacion.ipynb) | Arrays y ejes, esperanza, Bayes, matrices, gradientes, softmax y autoevaluación |
 | 1 | [Introducción](01_introduccion.ipynb) | Retorno y descuento, memoria con ruido, creencias bayesianas y shaping |
 | 2 | [Valores](02_valores.ipynb) | Modelo de un MDP, Bellman, TD y Monte Carlo, Q-learning, sesgo del máximo y HER |
 | 3 | [Políticas](03_politicas.ipynb) | Gradiente de REINFORCE, baselines, GAE, objetivo PPO, importancia y entropía |
@@ -32,7 +35,7 @@ Abre el capítulo y elige **Restart Kernel and Run All Cells** para reproducirlo
 4. Haz el ejercicio antes de desplegar su solución.
 5. Lleva al grupo una conclusión respaldada y una limitación.
 
-Se asumen conocimientos básicos de Python; el [repaso previo](../docs/00_conocimientos_previos.md) ayuda con la notación. Las secciones remiten al capítulo correspondiente de [Murphy, v5](https://arxiv.org/abs/2412.05265v5). Son una adaptación didáctica propia, no una reproducción completa del texto. El capítulo 8 original contiene agradecimientos: su práctica estadística es un añadido de esta guía.
+Se asumen variables, funciones y bucles básicos de Python. El [notebook 00](00_preparacion.ipynb) prepara las herramientas matemáticas y de NumPy; el [repaso breve](../docs/00_conocimientos_previos.md) sirve como consulta de notación. El preparatorio es material añadido, no un capítulo 0 del libro. Las secciones remiten al capítulo correspondiente de [Murphy, v5](https://arxiv.org/abs/2412.05265v5). Son una adaptación didáctica propia, no una reproducción completa del texto. El capítulo 8 original contiene agradecimientos: su práctica estadística es un añadido de esta guía.
 
 ## Fuentes editables y resultados
 

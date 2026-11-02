@@ -2,7 +2,7 @@
 
 Guía en español de **Kevin P. Murphy, arXiv:2412.05265v5**, con conocimientos previos, resúmenes, preguntas de discusión y laboratorios reproducibles.
 
-**Empieza por [los capítulos en notebooks: lectura y código intercalados](cuadernos/README.md)**. Para leer sin ejecutar código, consulta [la guía resumida para navegador](GUIA_LECTURA.html) o [la guía en PDF](GUIA_LECTURA.pdf). Puedes empezar por [los conocimientos previos](docs/00_conocimientos_previos.md) y consultar [el PDF original descargado](fuentes/murphy_rl_2412.05265v5.pdf). La guía HTML contiene las figuras y las fórmulas; se puede leer sin conexión.
+**Empieza por [el notebook 00 de preparación](cuadernos/00_preparacion.ipynb)** y continúa con [los capítulos en notebooks](cuadernos/README.md). Para leer sin ejecutar código, consulta [la guía resumida para navegador](GUIA_LECTURA.html) o [la guía en PDF](GUIA_LECTURA.pdf). Puedes empezar por [los conocimientos previos](docs/00_conocimientos_previos.md) y consultar [el PDF original descargado](fuentes/murphy_rl_2412.05265v5.pdf). La guía HTML contiene las figuras y las fórmulas; se puede leer sin conexión.
 
 La v5 tiene 253 páginas: siete capítulos de contenido, el capítulo 8 de agradecimientos y bibliografía. Incluimos un laboratorio por capítulo de contenido y una práctica metodológica propia para el apartado 8. Los experimentos son ilustraciones pequeñas, no reproducciones de los grandes sistemas del libro.
 
@@ -10,6 +10,7 @@ La v5 tiene 253 páginas: siete capítulos de contenido, el capítulo 8 de agrad
 
 | Capítulo | Páginas PDF | Resumen | Notebook: lectura y código |
 |---|---:|---|---|
+| 00. Preparación (añadido) | — | [Conocimientos previos](docs/00_conocimientos_previos.md) | [NumPy, matemáticas y autoevaluación](cuadernos/00_preparacion.ipynb) |
 | 1. Introduction | 13–30 | [Introducción](docs/01_introduccion.md) | [Retorno, memoria, creencias y shaping](cuadernos/01_introduccion.ipynb) |
 | 2. Value-based RL | 31–50 | [Valores](docs/02_valores.md) | [Bellman, TD, Q-learning y sobreestimación](cuadernos/02_valores.ipynb) |
 | 3. Policy-based RL | 51–82 | [Políticas](docs/03_politicas.md) | [REINFORCE, GAE, PPO y entropía](cuadernos/03_politicas.ipynb) |
@@ -55,7 +56,7 @@ uv sync --frozen --extra notebooks
 uv run --extra notebooks jupyter lab cuadernos
 ~~~
 
-Los ocho notebooks son capítulos didácticos con más de 10.000 palabras de explicación, 76 celdas de código y 25 figuras. Alternan conceptos, derivaciones, cálculos, experimentos y ejercicios con soluciones orientativas. El código está implementado en sus celdas y cada notebook funciona por separado con NumPy y Matplotlib; todos se han ejecutado en carpetas vacías. Ya contienen sus salidas. Selecciona el kernel del entorno del proyecto si tu editor usa otro Python.
+Los nueve notebooks incluyen el preparatorio 00 y ocho lecturas de capítulos, con más de 12.000 palabras de explicación, 98 celdas de código y 29 figuras. El preparatorio añade doce preguntas con corrección y una ruta de repaso; las respuestas pendientes se conservan como pendientes. Alternan conceptos, derivaciones, cálculos, experimentos y ejercicios con soluciones orientativas. El código está implementado en sus celdas y cada notebook funciona por separado con NumPy y Matplotlib; todos se han ejecutado en carpetas vacías. Ya contienen sus salidas. Selecciona el kernel del entorno del proyecto si tu editor usa otro Python.
 
 Consulta [el índice y la forma de trabajar](cuadernos/README.md). Los notebooks tienen ejemplos y presupuestos propios; las ejecuciones originales de los módulos siguen disponibles en resultados/capXX/. El directorio resultados/cuadernos/ conserva los datos de la primera versión, como indica [su nota de archivo](resultados/cuadernos/README.md).
 

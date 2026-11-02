@@ -128,4 +128,4 @@ if __name__ == "__main__":
     build_report()
     build_notebooks()
     build_html()
-    print("Generados: informe, ocho cuadernos y GUIA_LECTURA.html")
+    print("Generados: informe, cuadernos y GUIA_LECTURA.html")
